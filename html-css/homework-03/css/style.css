@@ -1,0 +1,43 @@
+body {
+    font-family: "Playfair Display", "Arial", serif;
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.content-name {
+    font-family: "Ubuntu", "Arial",
+        sans-serif;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #626262;
+}
+
+.site-navigation a:hover {
+    color: #25b4f5;
+}
+
+.content-name {
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #b4ad9e;
+}
+
+.content-title {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.page-footer {
+    font-size: 20px;
+    line-height: 24px;
+    color: #626262;
+}
