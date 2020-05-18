@@ -1,8 +1,21 @@
+* {
+    /* outline: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     font-family: "Playfair Display", "Arial", serif;
     color: #626262;
     font-size: 14px;
     line-height: 24px;
+    padding: 1px;
+}
+
+.wrapper {
+    padding: 70px 150px;
 }
 
 .content-name {
@@ -10,8 +23,14 @@ body {
         sans-serif;
 }
 
+.page-header {
+    margin: 0px 140px 100px 135px;
+
+}
+
 .site-navigation {
     list-style: none;
+    text-align: center;
 }
 
 .site-navigation a {
@@ -20,24 +39,83 @@ body {
     color: #626262;
 }
 
+.menu-item {
+    display: inline-block;
+    margin-right: 120px;
+}
+
+.menu-item:nth-last-child(1) {
+    margin: 0;
+}
+
 .site-navigation a:hover {
     color: #25b4f5;
 }
 
-.content-name {
+.container {
+    /* list-style: none; */
+    width: 904px;
+    margin: auto;
+}
+
+.article {
+    display: inline-block;
+    width: 420px;
+
+    /* margin-right: 60px; */
+}
+
+.article:nth-child(even) {
+    margin-left: 60px;
+}
+
+
+.article-name {
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
     color: #b4ad9e;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
-.content-title {
+.article-text {
+    margin-top: 40px;
+    margin-bottom: 135px;
+}
+
+.article-title {
+
     font-size: 30px;
     line-height: 36px;
+
 }
 
-.page-footer {
+
+
+.article:last-child .article-text,
+.article:nth-last-child(2) .article-text {
+    margin-bottom: 40px;
+}
+
+.footer-page {
+    color: #626262;
+
+}
+
+.footer-page {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    box-sizing: content-box;
+    padding: 18px 34px;
+    background-color: #fff;
+    border: 2px solid #626262;
+    width: 165px;
     font-size: 20px;
     line-height: 24px;
-    color: #626262;
+    margin-right: auto;
+    text-decoration: none;
 }
