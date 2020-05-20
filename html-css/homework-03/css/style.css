@@ -44,11 +44,15 @@ body {
     margin-right: 120px;
 }
 
-.menu-item:nth-last-child(1) {
+.menu-item:last-child {
     margin: 0;
 }
 
 .site-navigation a:hover {
+    color: #25b4f5;
+}
+
+.site-navigation a:focus {
     color: #25b4f5;
 }
 
