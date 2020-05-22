@@ -14,9 +14,12 @@ body {
 }
 
 .wrapper {
-    padding: 40px 270px 80px 260px;
+    padding: 40px 270px 85px 260px;
 }
 
+.page-header {
+    margin-bottom: 55px;
+}
 
 
 .logo {
@@ -81,7 +84,6 @@ body {
 h2 {
     text-align: center;
     font-size: 48px;
-    margin-top: 55px;
     line-height: 32px;
     font-weight: 900;
     color: #555252;
@@ -103,7 +105,7 @@ h2::after {
 }
 
 .products {
-    margin: 0 auto;
+    margin: 0 auto 105px;
     width: 1110px;
 }
 
@@ -181,13 +183,12 @@ h2::after {
 
 
 .article-name {
-    margin: 105px auto 85px;
+    margin: 0 auto 85px;
 }
 
 .new-item {
     width: 350px;
     float: left;
-    margin-bottom: 85px;
 }
 
 h3 {
@@ -222,6 +223,7 @@ h3::after {
     letter-spacing: -0.02em;
     color: #555252;
     font-weight: normal;
+    margin-bottom: 20px;
 }
 
 button {
@@ -238,6 +240,6 @@ button {
     text-decoration: none;
     border: none;
     outline: none;
-    margin-top: 20px;
+    cursor: pointer;
 
 }
