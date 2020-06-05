@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat',
+        sans-serif;
+    color: #333333;
+}
+
+.wrapper {
+    max-width: 1920px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 17px 360px 20px 360px;
+
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 117px;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: 'Montserrat',
+        sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: #95e1d3;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    width: 490px;
+    justify-content: space-between;
+}
+
+
+.menu-item:hover {
+    border-color: #f38181;
+    transition-duration: 300ms;
+    color: #f38181;
+}
+
+.menu-item:focus {
+    border-color: #f38181;
+    transition-duration: 300ms;
+    color: #f38181;
+}
+
+
+.menu-item {
+    text-decoration: none;
+    color: #95e1d3;
+    border-bottom: 3px solid;
+    padding: 13px 0;
+    border-color: transparent;
+    text-transform: uppercase;
+}
+
+.main-wrapper {
+    flex-grow: 1;
+    max-width: 1200px;
+    min-width: 480px;
+}
+
+.services {
+    padding-left: 30px;
+    margin-bottom: 95px;
+}
+
+.service-heading {
+    font-family: 'Kaushan Script',
+        cursive;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.service-title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 105px;
+    text-transform: uppercase;
+}
+
+.service-title::after {
+    display: block;
+    content: "";
+    margin: 45px auto 0;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+}
+
+.list-service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.list-title {
+    list-style: none;
+    display: flex;
+}
+
+.list-title-text {
+    flex-wrap: wrap;
+    width: 270px;
+}
+
+.list-title:nth-last-child(n+4) {
+    margin-bottom: 105px;
+}
+
+
+.service-img {
+    margin-right: 30px;
+}
+
+.name-title {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.text-title {
+    font-family: 'Roboto',
+        sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #999999;
+}
+
+.our-team {
+    margin-bottom: 10px;
+}
+
+.our-team::after {
+    display: flex;
+    display: block;
+    content: "";
+    width: auto;
+    height: 1px;
+    background-color: #e7e7e7;
+    margin: 80px auto 0;
+}
+
+.our-team h2 {
+    margin-bottom: 50px;
+}
+
+.text-about-team {
+    max-width: 945px;
+    text-align: center;
+    font-family: 'Roboto',
+        sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    margin: 0 auto 95px;
+}
+
+.about-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.team-info {
+    list-style: none;
+    position: relative;
+}
+
+.photo {
+    background-color: #95e1d3;
+    height: 470px;
+    margin-bottom: 25px;
+}
+
+.team-photo {
+    position: relative;
+    transition: all 0.4s ease-out;
+}
+
+.team-photo::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 470px;
+    width: 380px;
+    background-image: linear-gradient(#ee8a8a, #edd587);
+    transition: opacity 0.4s linear;
+    opacity: 0;
+}
+
+.team-photo:hover::before {
+    opacity: 0.73;
+    cursor: pointer;
+}
+
+.team-photo:hover {
+    transform: translate(-10px, -10px);
+}
+
+.team-info:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.profesion {
+    font-family: 'Roboto',
+        sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    text-align: center;
+}
+
+.social {
+    position: absolute;
+    display: flex;
+    top: 200px;
+    left: 77px;
+    opacity: 0;
+}
+
+.social-link:not(:last-child) {
+    border-right: 2px solid #f9bd87;
+}
+
+.team-photo:hover .social {
+    opacity: 1;
+    transition: opacity 0.4s ease-out;
+}
+
+.social-link:hover {
+    background-color: #95e1d3;
+}
+
+.social-link {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fce38a;
+}
+
+
+
+.facebook {
+    background-image: url(../img/facebook.png);
+}
+
+.twitter {
+    background-image: url(../img/twitter.png);
+}
+
+.pinterest {
+    background-image: url(../img/pinterest.png);
+}
+
+.instagram {
+    background-image: url(../img/instagram.png);
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info {
+    display: flex;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.footer-style {
+    color: #f38181;
+    margin-left: 5px;
+}
+
+.footer-active {
+    display: flex;
+}
+
+.footer-input {
+    font-family: 'Roboto',
+        sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+    color: #cccccc;
+    width: 230px;
+    height: 40px;
+    outline: none;
+    border: 1px solid #e7e7e7;
+    padding-left: 13px;
+}
+
+.footer-button {
+    background-color: #95e1d3;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    width: 150px;
+    height: 42px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0px;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

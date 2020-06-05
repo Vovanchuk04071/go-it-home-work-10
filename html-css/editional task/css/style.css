@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    padding: 20px 60px;
+}
+
+/* .menu {} */
+
+.menu-item {
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu-list {
+    float: left;
+    margin-left: 38px;
+    /* color: #0E1116; */
+    text-decoration: none;
+}
+
+.menu-item a {
+    text-decoration: none;
+    display: block;
+
+}
+
+.menu-item a:hover {
+    background: green,
+        yellow;
+}
+
+.menu-list:first-child {
+    margin-left: 0;
+}
+
+/* .menu-list:hover {
+    color: #0E1116;
+} */
+
+.clearfix {
+    display: table;
+    content: "";
+    clear: both;
+}
