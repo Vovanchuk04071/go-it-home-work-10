@@ -1,0 +1,257 @@
+@import url(font-face.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1400px;
+    min-width: 480px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 37px;
+}
+
+.page-header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    min-height: 120px;
+    max-width: 940px;
+    min-width: 480px;
+    margin: 0 auto;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: "wisdom";
+    font-size: 26px;
+    line-height: 41px;
+    letter-spacing: 0.05em;
+    color: #fed136;
+    padding-left: 5px;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 480px;
+    justify-content: space-between;
+}
+
+.menu-item {
+    font-family: "Montserrat";
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 41px;
+    text-transform: uppercase;
+    color: #222222;
+    font-weight: 700;
+}
+
+.menu-item:hover {
+    color: #fed136;
+    transition-duration: 200ms;
+}
+
+.main-wrapper {
+    padding: 80px 0 120px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    max-width: 940px;
+    min-width: 480px;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.025em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.sub-title {
+    font-family: "IBM Plex";
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    font-style: italic;
+    color: #777777;
+    margin-bottom: 82px;
+}
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.products-item {
+    width: 272px;
+}
+
+.products-item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.products-title {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.025em;
+    color: #222222;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.products-text {
+    font-family: "Roboto Slab";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #777777;
+    letter-spacing: -0.025em;
+    text-align: center;
+}
+
+.icon-img {
+    margin: 0 auto;
+    border: 3px solid #fed136;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.products-icon {
+    margin: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer-wrapper {
+    background-image: url(../img/Map\ Image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-title {
+    margin-top: 106px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    margin: 0 auto;
+    max-width: 940px;
+    min-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.contact-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    flex-direction: column;
+    height: 216px;
+}
+
+.contact-list input,
+textarea {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #bbbbbb;
+    letter-spacing: -0.025em;
+    padding-left: 20px;
+
+}
+
+
+.contact-list input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 460px;
+    height: 53px;
+    border: 0;
+    outline: 0;
+}
+
+
+.contact-name {
+    margin-bottom: 26px;
+}
+
+.contact-email {
+    margin-bottom: 27px;
+}
+
+
+.message textarea {
+    display: flex;
+    width: 460px;
+    height: 212px;
+    resize: none;
+    padding-top: 20px;
+    border: 0;
+    outline: 0;
+    margin-left: 25px;
+}
+
+.contact-list input::placeholder,
+textarea::placeholder {
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.025em;
+    font-weight: bold;
+    color: #bbbbbb;
+}
+
+.contact-btn {
+    margin: 0 auto 97px;
+    width: 240px;
+    height: 65px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #bbbbbb;
+    letter-spacing: -0.025em;
+    background-color: #fed136;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    border-radius: 2px;
+}
+
+.contact-btn:hover {
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
