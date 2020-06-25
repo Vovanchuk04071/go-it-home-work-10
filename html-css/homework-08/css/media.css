@@ -21,13 +21,13 @@
   }
 
   .partner-item {
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 961px) {
   .container {
-    width: 748px;
+    min-width: 748px;
   }
 
   .head-wrapper {
@@ -68,10 +68,6 @@
   .section-about-sub-title {
     font-size: 24px;
     margin-bottom: 32px;
-  }
-
-  .section-about-btn {
-    padding: 15px 25px;
   }
 
   .partner-title {
@@ -118,13 +114,13 @@
 @media (min-width: 962px) {
   .container {
     min-width: 942px;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     width: 100%;
   }
 
   .head-wrapper {
     background-image: url(../img/Vector_1440.jpg);
-    /* display: block; */
+    display: block;
     width: 100%;
   }
 
