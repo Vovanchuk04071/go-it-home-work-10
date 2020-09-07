@@ -1,0 +1,192 @@
+@import url(./font-face.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* img {
+  display: block;
+  width: 100%;
+  height: auto;
+} */
+
+body {
+  font-family: "Montserrat";
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+
+.head-wrapper {
+  /* background-color: black; */
+  background-image: url(../img/Vector_Smart.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.user-login a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #ffffff;
+  border: 4px solid;
+  border-radius: 50px;
+  padding: 11px 18px;
+  border-color: transparent;
+}
+
+.user-login a:hover {
+  border-color: #fff;
+  transition-duration: 250ms;
+}
+
+.logo {
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+}
+
+.section-about-title {
+  font-size: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  bottom: 19px;
+}
+
+.section-about-sub-title {
+  font-family: "Roboto";
+  font-weight: 300;
+  color: #ffffff;
+  margin: 0 40px 20px;
+}
+
+.section-about-btn {
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #ff3e50;
+  /* padding: 15px 50px; */
+  width: 225px;
+  height: 40px;
+  border: 0;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.section-about-btn:hover {
+  transition: linear;
+  /* width: 240px; */
+  transition-duration: 200ms;
+}
+
+.partner-title {
+  font-size: 22px;
+  color: #333333;
+}
+
+.partner-list {
+  list-style: none;
+}
+
+.partner-item {
+  /* width: 270px; */
+  padding: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: transform 0.2s ease-in, box-shadow 0.3s linear;
+}
+
+.partner-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.partner-img {
+  margin-bottom: 21px;
+  /* height: 121px; */
+  transform: translateX(20px);
+}
+
+.red::after {
+  content: url(../img/Shape_128.png);
+  background-color: #ff3e50;
+  display: inline-block;
+  line-height: 36px;
+  width: 32px;
+  height: 32px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  transform: translate(-40px, -10px);
+}
+
+.yellow::after {
+  content: url(../img/Shape_155.png);
+  background-color: #ffa507;
+  display: inline-block;
+  line-height: 36px;
+  width: 32px;
+  height: 32px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  transform: translate(-40px, -10px);
+}
+
+.green::after {
+  content: url(../img/Shape_153.png);
+  background-color: #1cd7ad;
+  display: inline-block;
+  line-height: 36px;
+  width: 32px;
+  height: 32px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  transform: translate(-40px, -10px);
+}
+
+.blue::after {
+  content: url(../img/Shape_170.png);
+  background-color: #4e73db;
+  display: inline-block;
+  line-height: 36px;
+  width: 32px;
+  height: 32px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  transform: translate(-40px, -10px);
+}
+
+.partner-name {
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.about-partner {
+  font-family: "Roboto";
+  font-weight: 300;
+  color: #666666;
+  font-size: 14px;
+}
+
+.partner-btn {
+  font-size: 14px;
+  padding: 15px 28px;
+  color: #ff3e50;
+  background-color: transparent;
+  border: 2px solid #ff3e50;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.partner-btn:hover {
+  color: #fff;
+  background-color: #ff3e50;
+  transition-duration: 0.3s;
+}

@@ -1,0 +1,49 @@
+.footer__wrapper {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 23px;
+}
+
+.footer__info {
+  display: flex;
+  font-size: $main-text-size;
+  line-height: 17px;
+  font-weight: 600;
+}
+
+.footer__style {
+  color: $second-ping-colour;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.footer__active {
+  display: flex;
+}
+
+.footer__input {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 24px;
+  color: #cccccc;
+  width: 230px;
+  height: 40px;
+  outline: none;
+  border: 1px solid #e7e7e7;
+  padding-left: 13px;
+}
+
+.footer__button {
+  background-color: $fourth-green-colour;
+  font-weight: bold;
+  font-size: $main-text-size;
+  line-height: 17px;
+  color: $primary-white-colour;
+  width: 150px;
+  height: 42px;
+  text-transform: uppercase;
+  outline: none;
+}

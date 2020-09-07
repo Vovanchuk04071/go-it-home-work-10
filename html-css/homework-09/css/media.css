@@ -1,0 +1,173 @@
+@media (max-width: 767px) {
+  .page-head {
+    margin-bottom: 69px;
+  }
+
+  .user-login {
+    padding-top: 32px;
+    margin-bottom: 120px;
+  }
+
+  .logo {
+    margin-bottom: 39px;
+  }
+
+  .section-about-title {
+    margin-bottom: 15px;
+  }
+
+  .section-about-btn {
+    margin-bottom: 138px;
+  }
+
+  /* 
+  .partner {
+    padding-top: 160px;
+  } */
+
+  .partner-title {
+    margin-bottom: 20px;
+  }
+
+  .partner-item {
+    margin: 0 auto 30px;
+  }
+
+  .about-partner {
+    padding: 0 45px;
+  }
+}
+
+@media (min-width: 768px) {
+  .head-wrapper {
+    width: 100%;
+  }
+
+  .page-head {
+    /* width: 100%;
+    display: flex;
+    margin: 0 auto; */
+    padding-top: 48px;
+    /* align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse; */
+  }
+
+  .section-about-title {
+    font-size: 52px;
+  }
+
+  .section-about-sub-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 961px) {
+  /* .page-head {
+    margin-bottom: 145px;
+  } */
+
+  /* .partner-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+  } */
+}
+
+@media (min-width: 768px) and (max-width: 961px) {
+  .container {
+    min-width: 748px;
+  }
+
+  .head-wrapper {
+    background-image: url(../img/Vector_Smart.jpg);
+    height: 700px;
+    margin-bottom: 72px;
+  }
+
+  .page-head {
+    max-width: 660px;
+  }
+
+  .user-login {
+    display: inline;
+  }
+
+  .section-about-title {
+    margin: 0 80px 30px;
+  }
+
+  .section-about-sub-title {
+    margin-bottom: 32px;
+  }
+
+  .partner-title {
+    margin-bottom: 32px;
+  }
+
+  .partner-list {
+    width: 532px;
+  }
+
+  .partner-item {
+    width: 246px;
+  }
+
+  .partner-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 60px;
+  }
+
+  .partner-btn {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 962px) {
+  .container {
+    min-width: 942px;
+    width: 100%;
+  }
+
+  .head-wrapper {
+    background-image: url(../img/Vector_1440.jpg);
+    display: block;
+  }
+
+  .page-head {
+    max-width: 940px;
+    margin-bottom: 150px;
+  }
+
+  .section-about-title {
+    max-width: 550px;
+    margin: 0 auto 35px;
+  }
+
+  .section-about-sub-title {
+    margin-bottom: 40px;
+  }
+
+  .section-about-btn {
+    margin-bottom: 234px;
+  }
+
+  .partner {
+    padding-top: 70px;
+  }
+
+  .partner-title {
+    margin-bottom: 35px;
+  }
+
+  .partner-list {
+    width: 940px;
+    margin-bottom: 40px;
+  }
+
+  .partner-item {
+    width: 220px;
+  }
+}
+
+*/

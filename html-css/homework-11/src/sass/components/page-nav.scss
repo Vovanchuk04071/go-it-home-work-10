@@ -1,0 +1,68 @@
+.page-header {
+  background-image: url(../images/picture.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  margin-bottom: 44px;
+  background-size: cover;
+
+  @media (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .page-header {
+      background-image: url(../images/picture@2x.jpg);
+    }
+  }
+}
+
+.page-nav__container {
+  width: 960px;
+  margin: 22px auto 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.page-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 620px;
+  justify-content: space-between;
+}
+
+.page-navigation__item {
+  @extend %list;
+  font-size: $main-text-size;
+  line-height: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $primary-white-colour;
+  border-bottom: 3px solid;
+  border-color: transparent;
+  padding-bottom: 12px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: $nav-yellow-colour;
+    transition-duration: 300ms;
+    color: $nav-yellow-colour;
+  }
+}
+
+.page-navigation__item--btn {
+  @extend %link;
+}
+
+.control {
+  background-color: transparent;
+  fill: $primary-white-colour;
+
+  &:hover {
+    fill: $nav-yellow-colour;
+  }
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+}

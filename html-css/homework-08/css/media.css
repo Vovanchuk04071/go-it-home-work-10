@@ -1,27 +1,74 @@
 @media (max-width: 767px) {
   .user-login {
     padding-top: 32px;
-    margin-bottom: 120px;
+    padding-bottom: 120px;
   }
 
   .logo {
     margin-bottom: 39px;
   }
 
-  .section-about-btn {
-    margin-bottom: 138px;
+  .section-about {
+    padding-bottom: 138px;
+  }
+
+  .section-about-title {
+    margin-bottom: 19px;
   }
 
   .partner {
-    padding-top: 160px;
+    padding-top: 69px;
   }
 
   .partner-title {
     margin-bottom: 20px;
   }
 
+  .partner-list {
+    padding-bottom: 30px;
+  }
+
   .partner-item {
-    margin: 0 auto 30px;
+    padding: 0 30px;
+    margin: 0 auto
+  }
+
+  .partner-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .head-wrapper {
+    width: 100%;
+  }
+
+  .page-head {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 48px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .section-about-title {
+    font-size: 52px;
+  }
+
+  .section-about-sub-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 961px) {
+
+  .partner-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
   }
 }
 
@@ -32,42 +79,32 @@
 
   .head-wrapper {
     background-image: url(../img/Vector_Smart.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 768px;
     height: 700px;
-    margin-bottom: 72px;
   }
 
   .page-head {
     max-width: 660px;
-    width: 100%;
-    display: flex;
-    margin: 0 auto;
-    padding-top: 48px;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    margin-bottom: 145px;
+    padding-bottom: 160px;
   }
 
   .user-login {
-    margin: 0;
     display: inline;
   }
 
-  .logo {
-    margin: 0;
+  .section-about {
+    padding-bottom: 215px;
   }
 
   .section-about-title {
-    font-size: 52px;
     margin: 0 80px 30px;
   }
 
   .section-about-sub-title {
-    font-size: 24px;
     margin-bottom: 32px;
+  }
+
+  .partner {
+    padding-top: 72px;
   }
 
   .partner-title {
@@ -75,80 +112,42 @@
   }
 
   .partner-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 532px;
-    margin: 0 auto;
-  }
-
-  .partner-item {
-    width: 246px;
+    width: 600px;
+    padding-bottom: 40px;
   }
 
   .partner-item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 60px;
   }
-
-  .about-partner {
-    padding: 0;
-  }
-
-  .partner-btn {
-    margin-top: 40px;
-  }
-
-  /* .partner-item-one {
-    order: 0;
-  }
-
-  .partner-item-two {
-    order: 1;
-  }
-
-  .partner-item-three {
-    order: 2;
-  } */
 }
 
 @media (min-width: 962px) {
   .container {
     min-width: 942px;
-    /* max-width: 1440px; */
     width: 100%;
   }
 
   .head-wrapper {
     background-image: url(../img/Vector_1440.jpg);
     display: block;
-    width: 100%;
   }
 
   .page-head {
     max-width: 940px;
-    width: 100%;
+    padding-bottom: 150px;
+  }
 
-    height: auto;
-    margin: 0 auto 150px;
-    padding-top: 48px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
+  .section-about {
+    padding-bottom: 234px;
   }
 
   .section-about-title {
-    font-size: 52px;
     max-width: 550px;
     margin: 0 auto 35px;
   }
 
   .section-about-sub-title {
-    font-size: 24px;
     margin-bottom: 40px;
-  }
-
-  .section-about-btn {
-    margin-bottom: 234px;
   }
 
   .partner {
@@ -161,16 +160,13 @@
 
   .partner-list {
     width: 940px;
-    margin: 0 auto 40px;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 40px;
   }
 
   .partner-item {
     width: 220px;
-  }
-
-  .about-partner {
-    padding: 0;
   }
 }

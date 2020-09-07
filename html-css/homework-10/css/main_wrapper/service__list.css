@@ -1,0 +1,40 @@
+.service__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service__item {
+    list-style: none;
+    display: flex;
+}
+
+.service__itemWRP {
+    display: flex;
+    flex-wrap: wrap;
+    width: 270px;
+}
+
+.service__item:nth-last-child(n + 4) {
+    margin-bottom: 85px;
+}
+
+.service__img {
+    margin-right: 29px;
+}
+
+.service__title {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.service__desc {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #999999;
+}

@@ -1,0 +1,34 @@
+.page-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    width: 620px;
+    justify-content: space-between;
+}
+
+.page-navigation__item:hover {
+    border-color: #fce38a;
+    transition-duration: 300ms;
+    color: #fce38a;
+}
+
+.page-navigation__item:focus {
+    border-color: #fce38a;
+    transition-duration: 300ms;
+    color: #fce38a;
+}
+
+.page-navigation__item {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    border-bottom: 3px solid;
+    border-color: transparent;
+    padding-bottom: 12px;
+    cursor: pointer;
+}
+
+.control {
+    background-color: transparent;
+}

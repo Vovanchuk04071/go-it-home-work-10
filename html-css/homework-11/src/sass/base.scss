@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+body {
+  font-family: $main-font-stack;
+  color: #333333;
+}
+
+.main__wrapper {
+  flex-grow: 1;
+  max-width: 1200px;
+  min-width: 480px;
+  margin: 0 auto;
+}

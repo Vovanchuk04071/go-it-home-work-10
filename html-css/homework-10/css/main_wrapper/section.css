@@ -1,0 +1,38 @@
+.main__wrapper {
+    flex-grow: 1;
+    max-width: 1200px;
+    min-width: 480px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-left: 30px;
+    margin-bottom: 77px;
+}
+
+.section__heading {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+.section__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 63px;
+    text-transform: uppercase;
+}
+
+.section__title::after {
+    display: block;
+    content: "";
+    margin: 35px auto 0;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+}

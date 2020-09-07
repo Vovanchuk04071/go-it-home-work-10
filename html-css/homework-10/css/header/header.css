@@ -1,0 +1,24 @@
+.page-header {
+    background-image: url(../../img/picture.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin-bottom: 44px;
+    background-size: cover;
+}
+
+.page-nav__container {
+    width: 960px;
+    margin: 22px auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+    align-items: baseline;
+}
+
+@media (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .page-header {
+        background-image: url(../../img/picture@2x.jpg);
+    }
+}

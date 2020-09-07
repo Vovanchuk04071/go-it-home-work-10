@@ -1,0 +1,27 @@
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    src: local(Montserrat-regular) url(../scripts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    src: local(Montserrat-bold) url(../scripts/Montserrat-Bold.ttf)
+}
+
+@font-face {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    src: local(Roboto-light) url(../scripts/Roboto-Light.ttf)
+}
+
+@font-face {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    src: local(Roboto-regular) url(../scripts/Roboto-Regular.ttf)
+}
