@@ -45,7 +45,6 @@
 //   let max = numberOfWords.length;
 //   return max * pricePerWord;
 // };
-
 // console.log(
 //   calculateEngravingPrice("Donec orci lectus aliquam est magnis", 40)
 // ); // 240
@@ -128,8 +127,79 @@
 // console.log(checkForSpam("[SPAM] How to earn fast money?")); // true
 
 // ============================================================================= 6 завдання
-// let input;
-// const numbers = [];
-// let total = 0;
 
-// input = prompt("Введите число");
+
+// const amountOfNumbers = function () {
+//   let total = 0;
+//   const numbers = [];
+//   let input = prompt("Введите число");
+
+//   // if () {
+//   //   alert('Вы ввели не число')
+//   // }
+//   while (input !== null) {
+//     numbers.push(input)
+//     input = prompt("Введите число");
+//   }
+//   if (input === null & numbers.length > 0) {
+//     for (let i = 0; i < numbers.length; i += 1) {
+//       total += Number(numbers[i]);
+//     }
+//   } else {
+//     console.log("неа")
+//   }
+//   return console.log(total);
+// }
+
+// amountOfNumbers();
+
+// ========================== завдання 7. додаткове
+// const logins = ['Mango', 'robotGoogles', 'Poly', 'Aj4x1sBozz', 'qwerty123'];
+
+// const isLoginValid = function (login) {
+//   if (login.length >= 4 & login.length <= 16) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+
+// Юля Чуприна
+// const isLoginValid = (login) => {
+//   return (login.length >= 4 && login.length <= 16) ? true : false;
+// };
+
+// 
+// const isLoginUnique = (allLogins, login) => (
+//   allLogins.includes(login) ? true : false
+// );
+
+// const isLoginUnique = function (allLogins, login) {
+//   if (allLogins.includes(login)) {
+//     return false;
+//   } else {
+//     return true;
+//   }
+// };
+
+// const addLogin = function (allLogins, login) {
+//   if (isLoginValid(login)) {
+//     if (isLoginUnique(allLogins, login)) {
+//       allLogins.push(login)
+//       return ('Логин успешно добавлен!')
+//     } else {
+//       return ('Такой логин уже используется!')
+//     }
+//   } else {
+//     return ('Ошибка! Логин должен быть от 4 до 16 символов');
+//   }
+// };
+
+// /*
+//  * Вызовы функции для проверки работоспособности твоей реализации.
+//  */
+// console.log(addLogin(logins, 'Ajax')); // 'Логин успешно добавлен!'
+// console.log(addLogin(logins, 'robotGoogles')); // 'Такой логин уже используется!'
+// console.log(addLogin(logins, 'Zod')); // 'Ошибка! Логин должен быть от 4 до 16 символов'
+// console.log(addLogin(logins, 'jqueryisextremelyfast')); // 'Ошибка! Логин должен быть от 4 до 16 символов'
+// console.log(logins)
