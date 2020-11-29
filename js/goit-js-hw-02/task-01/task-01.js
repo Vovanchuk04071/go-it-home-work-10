@@ -128,8 +128,8 @@
 // console.log(checkForSpam("[SPAM] How to earn fast money?")); // true
 
 // ============================================================================= 6 завдання
-let input;
-const numbers = [];
-let total = 0;
+// let input;
+// const numbers = [];
+// let total = 0;
 
-input = prompt("Введите число");
+// input = prompt("Введите число");
