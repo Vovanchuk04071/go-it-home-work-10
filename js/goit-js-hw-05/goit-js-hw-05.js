@@ -91,38 +91,60 @@
 
 
 // ================================================================== Задача 3
-class Storage {
-    constructor(items = []) {
-        this.items = items;
+// class Storage {
+//     constructor(items = []) {
+//         this.items = items;
+//     }
+
+//     getItems() {
+//       return (this.items)
+//     }
+
+//     addItem(item) {
+//         this.items.push(item)
+//         // return (this.items)
+//     }
+
+//     removeItem(item) {
+//       this.items = this.items.filter(currItem => currItem !== item)
+//     }  
+// }
+
+// const storage = new Storage([
+//   'Нанитоиды',
+//   'Пролонгер',
+//   'Железные жупи',
+//   'Антигравитатор',
+// ]);
+
+// const items = storage.getItems();
+// console.table(items); // [ "Нанитоиды", "Пролонгер", "Железные жупи", "Антигравитатор" ]
+
+// storage.addItem('Дроид');
+// console.table(storage.items); // [ "Нанитоиды", "Пролонгер", "Железные жупи", "Антигравитатор", "Дроид" ]
+
+// storage.removeItem('Пролонгер');
+// console.table(storage.items); // [ "Нанитоиды", "Железные жупи", "Антигравитатор", "Дроид" ]
+
+
+// ========= Завдання №4
+class StringBuilder {
+    constructor(value) {
+        this._value = value;
     }
-
-    getItems() {
-      return (this.items)
+    get value() {
+        return this.value
     }
+ }
 
-    addItem(item) {
-        this.items.push(item)
-        // return (this.items)
-    }
+const builder = new StringBuilder('.')
 
-    removeItem(item) {
-      const redItem = this.items.filter(item => item.includes(this.items) !== item);
-      console.log(redItem)
-    }  
-}
 
-const storage = new Storage([
-  'Нанитоиды',
-  'Пролонгер',
-  'Железные жупи',
-  'Антигравитатор',
-]);
+builder.append('^');
+console.log(builder.value); // '.^'
 
-const items = storage.getItems();
-console.table(items); // [ "Нанитоиды", "Пролонгер", "Железные жупи", "Антигравитатор" ]
+builder.prepend('^');
+console.log(builder.value); // '^.^'
 
-storage.addItem('Дроид');
-console.table(storage.items); // [ "Нанитоиды", "Пролонгер", "Железные жупи", "Антигравитатор", "Дроид" ]
-
-storage.removeItem('Пролонгер');
-console.table(storage.items); // [ "Нанитоиды", "Железные жупи", "Антигравитатор", "Дроид" ]
+builder.pad('=');
+console.log(builder.value); // '=^.^='
