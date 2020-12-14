@@ -183,14 +183,7 @@ const getSortedUniqueSkills = users => {
             uniqueSkills.push(skill)
         }
     })
-    
-  
-
-    
-    console.log(allSkills)
-    console.log(sortSkills)
-    console.log(uniqueSkills)
-    
+    return uniqueSkills
 };
 
 console.log(getSortedUniqueSkills(users));
