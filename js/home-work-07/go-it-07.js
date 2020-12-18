@@ -152,52 +152,41 @@ const input = document.querySelector('input')
 btnAdd.addEventListener('click', createBoxes)
 btnRemove.addEventListener('click', destroyBoxes)
 
-const divBoxes = [];
-const itemb = '35';
+
+
 function createBoxes() {
     const amount = input.value
+  createItem(amount)
+  let allBoxes = document.querySelectorAll('#boxes div')
+  enlargeBoxes(allBoxes)
+}
+
+function createItem(amount) {
   for (let i = 1; amount >= i; i += 1) {
-    
     let newBox = document.createElement('div')
     newBox.style.width = "30px";
-    newBox.style.height = "${itemb}px";
+    newBox.style.height = "30px";
     newBox.style.backgroundColor = randColor()
     boxes.prepend(newBox)
+  } 
+}
+
+function enlargeBoxes(boxes) {
+  let tmpWidth = 30;
+  for (let i = 0; i < boxes.length; i += 1) {
+    boxes[i].style.width =`${tmpWidth}px`;
+    boxes[i].style.height= `${tmpWidth}px`;
+    tmpWidth += 10;
   }
 }
 
 function destroyBoxes() {
-  const amount = input.value
-  for (let i = 1; amount >= i; i += 1) {
-    let delBox = boxes.querySelector('div')
-    delBox.remove()
-  }
+   boxes.innerHTML = ('')
 }
 
-// function enlargementSize() {
-//   let width; 
-//   width = width + '10px'
-//   // height = height + '10px'
-// }
 
 
 function randColor(){
     let rand = () => Math.floor(Math.random() * (255 + 1 - 0) + 0);
     return `rgb(${rand()},${rand()},${rand()})`;
 }
-
-
-console.log(divBoxes)
-
-
-// function createBoxes() {
-//     const amount = input.value
-//   for (let i = 1; amount >= i; i += 1) {
-//     let newBox = document.createElement('div')
-    
-//     newBox.style = "width: 30px; heigth: 30px";
-//     // newBox.style.height = "${heigth}px";
-//     newBox.style.backgroundColor = randColor()
-//     boxes.prepend(newBox)
-//   }
-// }
