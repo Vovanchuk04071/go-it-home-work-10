@@ -1,0 +1,15 @@
+{
+  "name": "home-work-08",
+  "version": "1.0.0",
+  "main": "gallery-item.js",
+  "scripts": {
+    "start": ""
+  },
+  "author": "Volodymir Volosetskyi <vovanchuk04071@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "shortid": "^2.2.16"
+  },
+  "keywords": [],
+  "description": ""
+}
