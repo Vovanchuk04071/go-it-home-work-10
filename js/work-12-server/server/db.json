@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "name": "mango",
+      "mail": "mango@mail.com",
+      "id": 1,
+      "group": "test"
+    },
+    {
+      "name": "nud",
+      "mail": "nud@mail.com",
+      "id": 2,
+      "group": "test"
+    },
+    {
+      "name": "Igor",
+      "mail": "igor@mail.com",
+      "id": 3,
+      "group": "track"
+    }
+  ]
+}
