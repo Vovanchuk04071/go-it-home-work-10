@@ -17,23 +17,22 @@ refs.searchForm.addEventListener(
 function searchFormSubmitHeandler(e) {
   e.preventDefault();
 
-  const input = e.target;
-  const inputValue = input.value;
+  const inputValue = e.target.value;
 
   fetchCountries.searchQuery = inputValue;
-  clearListIten();
+  clearMarcup();
 
-  inputCheck(inputValue);
+  fetch(inputValue);
 }
 //перевірка вводу
-function inputCheck(inputValue) {
+function fetch(inputValue) {
   if (inputValue.length > 0) {
     fetchCountries
       .fetchCountry()
       .then(responsive => {
         responsive.data;
-        console.log(responsive.data);
-        numberCounties(responsive.data);
+        
+        createMarcup(responsive.data);
       })
       .catch(err => {
         notify.clickError();
@@ -44,12 +43,12 @@ function inputCheck(inputValue) {
 
 //Пошук кількості країн
 
-function numberCounties(items) {
-  if ((items.length > 1) & (items.length <= 10)) {
-    buildListManyItemMarcup(items);
+function createMarcup(items) {
+  if (items.length > 1 && items.length <= 10) {
+    rendelItems(items);
   }
   if (items.length === 1) {
-    buildListItemMarcup(items);
+    renderExpandedItem(items);
   }
   if (items.length > 10) {
     notify.clickWarning();
@@ -57,20 +56,20 @@ function numberCounties(items) {
 }
 
 //рендерінг багатьох країн
-function buildListItemMarcup(items) {
+function renderExpandedItem(items) {
   const marcup = countryMarkup(items);
-  insertListItem(marcup);
+  insertMarcup(marcup);
 }
 
 //рендеринг однієї країни
-function buildListManyItemMarcup(items) {
+function rendelItems(items) {
   const marcup = manyCountriesMarcup(items);
-  insertListItem(marcup);
+  insertMarcup(marcup);
 }
 //Рендеринг в HTML
-function insertListItem(marcup) {
+function insertMarcup(marcup) {
   refs.marcupCountry.insertAdjacentHTML('beforeend', marcup);
 }
-function clearListIten() {
+function clearMarcup() {
   refs.marcupCountry.innerHTML = '';
 }

@@ -1,0 +1,30 @@
+{{#each this}}
+<div class="gallery-container w-3 h-2">
+    <div class="photo-card gallery-item">
+        <div class="image">
+            <img src="{{webformatURL}}" alt="{{id}}" />
+        </div>
+
+        <div class="text stats">
+            <p class="stats-item">
+                <i class="material-icons">thumb_up</i>
+                {{likes}}
+
+            </p>
+            <p class="stats-item">
+                <i class="material-icons">visibility</i>
+                {{views}}
+            </p>
+            <p class="stats-item">
+                <i class="material-icons">comment</i>
+                {{comments}}
+            </p>
+            <p class="stats-item">
+                <i class="material-icons">cloud_download</i>
+                {{downloads}}
+            </p>
+        </div>
+
+    </div>
+</div>
+{{/each}}
