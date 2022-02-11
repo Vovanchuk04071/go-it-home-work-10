@@ -40,7 +40,7 @@
     "img-loader": "^3.0.2",
     "lodash-webpack-plugin": "^0.11.6",
     "mini-css-extract-plugin": "^0.11.2",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "optimize-css-assets-webpack-plugin": "^5.0.4",
     "pnotify": "^5.2.0",
     "postcss-loader": "^4.0.2",
